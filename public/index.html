@@ -52,22 +52,18 @@
                     <label for="name">Username</label>
                     <input id="txtName" type="text" placeholder="Username">
                 </div>
-
                 <div class="pure-control-group">
                     <label for="password">Password</label>
                     <input id="txtPassword" type="password" placeholder="Password">
                 </div>
-
                 <div class="pure-control-group">
                     <label for="email">Email Address</label>
                     <input id="txtEmail" type="email" placeholder="Email Address">
                 </div>
-
                 <!--<div class="pure-control-group">
             <label for="foo">address</label>
             <input id="foo" type="text" placeholder="Enter something here...">
         </div>-->
-
                 <div class="pure-controls">
                     <label for="cb" class="pure-checkbox">
                     <input id="cb" type="checkbox"> I've read the terms and conditions
@@ -81,9 +77,12 @@
         </section>
         <aside></aside>
         <footer></footer>
+        <div><button id="btnGoogleSignIn" ng-click="vm.signInGoogle();" class="pure-button pure-button-primary">Google SignIn</button>
+            <button id="btnGoogleSignOut" ng-click="vm.signOutGoogle();" class="pure-button pure-button-primary">Google SignOut</button></div>
     </div>
+    <!--<div><button id="btnGoogleSignIn" ng-click="vm.signInGoogle();" class="pure-button pure-button-primary">Google SignIn</button>
+        <button id="btnGoogleSignOut" class="pure-button pure-button-primary">Google SignOut</button></div>-->
     <!--<div data-ng-include="'sign.html'"></div>-->
-
     <!--external libraries-->
     <script type="text/javascript" src="dependencies/angular/angular.js"></script>
     <script type="text/javascript" src="dependencies/angular-animate/angular-animate.js"></script>
@@ -91,11 +90,9 @@
     <script type="text/javascript" src="dependencies/angular-material/angular-material.js"></script>
     <script type="text/javascript" src="dependencies/angular-messages/angular-messages.js"></script>
     <script type="text/javascript" src="dependencies/angular-sanitize/angular-sanitize.js"></script>
-
     <!--local script files-->
     <!--<script type="text/javascript" src="app/main.js"></script>-->
     <script type="text/javascript" src="app.js"></script>
-
 </body>
 
 </html>
